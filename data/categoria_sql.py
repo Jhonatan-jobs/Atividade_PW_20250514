@@ -1,0 +1,17 @@
+CRIAR_TABELA = """
+CREATE TABLE IF NOT EXISTS categoria (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+nome TEXT NOT NULL)
+"""
+
+INSERIR = """
+INSERT INTO cliente (nome) 
+VALUES (?)
+"""
+
+OBTER_TODOS = """
+SELECT 
+id, nome
+FROM Categoria
+ORDER BY nome
+""" 
